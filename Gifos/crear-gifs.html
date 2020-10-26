@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&amp;display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&amp;display=swap" rel="stylesheet"> 
+    <link id="themeChange" type="text/css" href="style-day.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/gifOF_logo.png" class='favicon'>
+    <title>gif.os</title>
+</head>
+<body>
+    <header class="header">
+        <p>¡Bienvenidos/as a gif.os! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <section>
+        <div class="logo-container-creargifs">
+            <div>
+                <a href="index.html"><img class="flecha" src="/img/arrow.svg" alt="Flecha para volver a la página principal de Gif.OS"></a>
+            </div>
+            <div>
+                <img class="logo" src="/img/gifOF_logo.png" alt="Logo de gif.os">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="ventana-crear-gif" class="ventana">
+            <div class="contenedor-titulo">
+                <p class="titulo">Crear gif</p>
+            </div>
+            <div class="contenedor-texto">
+                <div class="texto">
+                    <img class="ventana-imagen" src="img/window_img.png">
+                    <p><b>Aquí podrás crear tus propios gifs</b></p>
+                </div>
+                <div class="ventana-texto">
+                    <p>Crear tu <b>gif</b> es muy fácil, graba cualquier imagen con tu cámara y obtén gifs personalizados. Los pasos para crear tu gif son:</p>
+                        <p><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                        <p><b>2)</b> Capturar tu momento gif</p>
+                        <p><b>3)</b> Revisar el momento</p>
+                        <p><b>4)</b> ¡Listo para subir y compartir!</p>
+                        <p>¿Quieres comenzar a crear tu <b>gif</b> ahora?</p>
+                </div>
+                <div class="contenedor-botones1">
+                    <a href="index.html" id="cancelarGif" class="button">Cancelar</a>
+                    <a id="crearGif" class="button">Comenzar</a>
+                </div>
+            </div>
+        </div>
+        <div id="ventana-captura" class="ventana" style="display:none;">
+            <div id="titulo-chequeo" class="contenedor-titulo">
+                <p class="titulo">Un chequeo antes de empezar</p>
+            </div>
+            <div id="titulo-captura" class="contenedor-titulo" style="display:none;">
+                <p class="titulo">Capturando tu gif</p>  
+            </div>
+            <div id="titulo-vista-previa" class="contenedor-titulo" style="display:none;">
+                <p class="titulo">Vista previa</p>
+            </div>
+            <div>
+                <img id="preview" class="preview" style="display: none;">
+                <video id="captura-gif" class="captura-gif">
+
+                </video>
+                <div id="contenedor-chequeo" class="contenedor-botones1">
+                    <div id="botones-chequeo" class="botones-chequeo contenedor-botones1">
+                        <a id="capturarGifIcon" class="button"><img src="/img/camera.svg"></a>
+                        <a id="capturarGif" class="button">Capturar</a>
+                    </div>
+                </div>
+                <div id="contenedor-captura" class="contenedor-botones2" style="display:none;">
+                    <p class="clock">00:00:00</p>
+                    <div id="botones-captura" class="contenedor-captura">
+                        <a id="gifCapturadoIcon" class="recButton"><img src="/img/recording.svg"></a> 
+                        <a id="gifCapturado" class="recButton">Listo</a>
+                    </div>
+                </div>
+                <div id="contenedor-vista-previa" class="contenedor-botones2" style="display:none;">
+                    <p id="clock" class="clock"></p>
+                    <div class="botones-ok">
+                        <a id="repetirCaptura" class="button repetirCaptura">Repetir captura</a>
+                        <a id="guardarGif" class="button guardarGif">Guardar gif</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="subiendo-gif" class="ventana" style="display: none;">
+            <div class="contenedor-titulo">
+                <p class="titulo">Subiendo tu gif</p>
+                <img class="boton-cruz" src="/img/button3.svg" alt="Botón de cruz">
+            </div>
+            <div class="contenedor-texto">
+                <div class="subiendo-gif">
+                    <img class="globe" src="img/globe_img.png">
+                    <p><b>Estamos subiendo tu gif…</b></p>
+                    <div id="myProgress">
+                        <div id="myBar">1%</div>
+                      </div>
+                    <p id="tiempo-restante">Tiempo restante: <span class="texto-tachado">38 años</span> algunos segundos</p>
+                </div>
+            </div>
+            <div class="contenedor-botones1">
+                <a href="crear-gifs.html" id="cancelarGif" class="button">Cancelar</a>
+            </div>
+        </div>
+        <div id="gif-exito" class="ventana" style="display: none;">
+            <div class="contenedor-titulo">
+                <p class="titulo">Gif subido con éxito</p>
+                <img class="boton-cruz" src="/img/button3.svg" alt="Botón de cruz">
+            </div>
+            <div class="contenedor-texto">
+                <div class="contenedor-descarga">
+                    <img id='gif-subido'></img>
+                    <div class="botones-descarga">
+                        <p><b>Gif creado con éxito</b></p>
+                        <a id="copiar-enlace" class="button">Copiar enlace del gif</a>
+                        <a id="descargar-gif" class="button">Descargar gif</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-botones1">
+                <a href="mis-gifs.html" class="button">Listo</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="gifLibrary" style="display: none;">
+            <input class="barra-sugerencias misgifs-barra" type="text" placeholder="Mis gifs">
+            <div id="mis-gifs">
+            </div>
+        </div>
+    </section>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="crear-gifs.js"></script>
+</body>
+</html>

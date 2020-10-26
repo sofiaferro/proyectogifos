@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap" rel="stylesheet">
+    <link id="themeChange" type="text/css" href="style-day.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/gifOF_logo.png" class='favicon'>
+    <title>gif.os</title>
+</head>
+
+<body>
+    <header class="header">
+        <p>¡Bienvenidos/as a gif.os! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <section>
+        <div class="logo-container">
+            <div>
+                <img class="logo" src="/img/gifOF_logo.png" alt="Logo de gif.os">
+            </div>
+            <nav class="menu">
+                <a class="button creargifs" href="crear-gifs.html">Crear gifs</a>
+                <div class="menu-desplegable">
+                    <div>
+                        <a class="button elegirtema" id="menu-desplegable">Elegir tema<img class="button desplegable"
+                                src="/img/dropdown.svg" alt="" /></a>
+                    </div>
+                    <div id="desplegable" style="display:none;">
+                        <a href="#" id="day-theme" class="theme">Sailor Day</a>
+                        <a href="#" id="night-theme" class="theme">Sailor Night</a>
+                    </div>
+                </div>
+                <a id='misgifs' class="misgifs" href=""><u>M</u>is gifs</a>
+            </nav>
+        </div>
+    </section>
+    <section class="busqueda">
+        <div class="ventana">
+            <div class="contenedor-titulo">
+                <p class="titulo">Buscar</p>
+            </div>
+            <div class="contenedor-barra buscar">
+                <div class="contenedor1">
+                    <input id="search-bar" value="" class="barra-busqueda" type="text"
+                        placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <div class="boton-buscar" id="submit">
+                        <img class="boton-lupa" src="/img/lupa_inactive.svg" alt="">
+                        <a>Buscar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor2">
+                <ul id="autocompleteTerms">
+                    <li id="term1" class="autocomplete-term"></li>
+                    <li id="term2" class="autocomplete-term"></li>
+                    <li id="term3" class="autocomplete-term"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="tags">
+            <a class="tag"></a>
+            <a class="tag"></a>
+            <a class="tag"></a>
+        </div>
+        <div id="search-result-container" class="contenedor-barra">
+            <input id="search-results" class="barra-resultados" value="" type="text" placeholder="Resultados">
+        </div>
+        <div id="gifs">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-large" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-small" src="" alt="Gif resultado de búsqueda">
+            <img class="contenedor-busqueda gif-large" src="" alt="Gif resultado de búsqueda">
+        </div>
+    </section>
+    <section class="sugerencias">
+        <div class="contenedor-barra">
+            <input class="barra-sugerencias" type="text" placeholder="Los más buscados:">
+        </div>
+        <div id="suggestions" class="resultados-sugerencias">
+            <!-- titulo -->
+            <!-- gif -->
+        </div>
+    </section>
+    <section class="tendencias">
+        <div class="contenedor-barra">
+            <input class="barra-tendencias" type="text" placeholder="Tendencias:">
+        </div>
+        <div id="trends" class="contenedor-tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-large" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-small" src="" alt="Gif resultado de tendencias">
+            <img class="contenedor-tendencias gif-large" src="" alt="Gif resultado de tendencias">
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
